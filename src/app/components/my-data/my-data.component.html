@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">Meine Daten</div>
+    <div class="card-body">
+      <div class="container">
+        <form (ngSubmit)="onSave()">
+          <div class="form-group">
+            <label for="firstname">Vorname</label>
+            <input [(ngModel)]="firstname" type="text" name="firstname" id="firstname" class="form-control" placeholder="Vorname">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Nachname</label>
+            <input [(ngModel)]="lastname" type="text" name="lastname" id="lastname" class="form-control" placeholder="Nachname">
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input [(ngModel)]="email" type="email" name="email" id="email" class="form-control" placeholder="E-Mail">
+          </div>
+          <div class="form-group">
+            <label for="newPassword">Neues Passwort</label>
+            <input [(ngModel)]="newPassword" type="password" name="newPassword" id="newPassword" class="form-control" placeholder="Neues Passwort">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Passwort wiederholen</label>
+            <input [(ngModel)]="confirmPassword" type="password" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Passwort wiederholen">
+          </div>
+          <button type="submit" class="btn btn-primary">Speichern</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
